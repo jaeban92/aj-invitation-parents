@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>KakaoTalk Embed</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>Click the image below</strong> By. Blackcats4567</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('114b0296206978b5337748dcef95ad07');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '알렉스 ♥ 재은 결혼합니다',
+        description: '2025년 4월 26일 토요일 오후 5시\n제주 씨에스 호텔 앤 리조트',
+        imageUrl:
+          'https://postfiles.pstatic.net/MjAyNTAzMjZfMTgz/MDAxNzQyOTMzNjg0Mjcx.RFwGXLycbQokYc3wEsk1KwxzSOERIyMkW98n1I5fzesg.CFPz195Qrrlfkj9YEKSaj93QwJ_ZVbevGRDLJ_jstK0g.PNG/IMG_5629_(1).png?type=w966',
+        link: {
+          mobileWebUrl: 'https://alex-and-jenny.webflow.io/parents',
+          webUrl: 'https://alex-and-jenny.webflow.io/parents',
+        },
+      },
+      buttons: [
+        {
+          title: '모바일 청첩장 보기',
+          link: {
+            mobileWebUrl: 'https://alex-and-jenny.webflow.io/parents',
+            webUrl: 'https://alex-and-jenny.webflow.io/parents',
+          },
+        },
+      ],
+    })
+  }
+</script>
+  </body>
+</html>
